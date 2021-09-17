@@ -36,9 +36,9 @@ client.on("messageCreate", async (msg)=>{
              return msg.reply("Too many arguments");
         }
         
-        const url = `https://chart.googleapis.com/chart?chs=${size}x${size}&cht=qr&chl=${arg[1]}&choe=UTF-8&chco=${color}`;
+        const qrCode = `https://chart.googleapis.com/chart?chs=${size}x${size}&cht=qr&chl=${arg[1]}&choe=UTF-8&chco=${color}`;
 
-       return msg.reply(url);
+       return msg.reply(qrCode);
     }
     
 
